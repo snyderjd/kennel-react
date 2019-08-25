@@ -1,21 +1,66 @@
 {
-    "animals": [
-        { "id": 1, "name": "Doodles", "breed": "Poodle"},
-        { "id": 2, "name": "Decker", "breed": "German Sheperd" },
-        { "id": 3, "name": "Esme", "breed": "Pitbull" }
-    ],
-    "employees": [
-        { "id": 1, "name": "Aaron Rodgers" },
-        { "id": 2, "name": "Tom Brady" },
-        { "id": 3, "name": "Drew Brees" }
-    ],
-    "owners": [
-        { "id": 1, "name": "Dwayne Johnson", "phoneNumber": "555-321-1000" },
-        { "id": 2, "name": "Kevin Hart", "phoneNumber": "555-321-2000" },
-        { "id": 3, "name": "Dave Chapelle", "phoneNumber": "555-321-3000" }
-    ],
-    "locations": [
-        { "id": 1, "address": "100 Locust Street", "city": "Nashville", "state": "TN", "zip": "37209" },
-        { "id": 2, "address": "300 8th Avenue", "city": "Nashville", "state": "TN", "zip": "37209" }
-    ]
+  "animals": [
+    {
+      "id": 1,
+      "name": "Doodles",
+      "breed": "Poodle"
+    },
+    {
+      "id": 2,
+      "name": "Decker",
+      "breed": "German Sheperd"
+    },
+    {
+      "id": 3,
+      "name": "Esme",
+      "breed": "Pitbull"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Aaron Rodgers"
+    },
+    {
+      "id": 2,
+      "name": "Tom Brady"
+    },
+    {
+      "id": 3,
+      "name": "Drew Brees"
+    }
+  ],
+  "owners": [
+    {
+      "id": 1,
+      "name": "Dwayne Johnson",
+      "phoneNumber": "555-321-1000"
+    },
+    {
+      "id": 2,
+      "name": "Kevin Hart",
+      "phoneNumber": "555-321-2000"
+    },
+    {
+      "id": 3,
+      "name": "Dave Chapelle",
+      "phoneNumber": "555-321-3000"
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "address": "100 Locust Street",
+      "city": "Nashville",
+      "state": "TN",
+      "zip": "37209"
+    },
+    {
+      "id": 2,
+      "address": "300 8th Avenue",
+      "city": "Nashville",
+      "state": "TN",
+      "zip": "37209"
+    }
+  ]
 }
