@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Animal from './Animal.css';
+import'./Animal.css';
 import { Link } from "react-router-dom";
 
 class AnimalCard extends Component {

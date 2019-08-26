@@ -55,15 +55,22 @@
       "id": 2,
       "address": "300 8th Avenue",
       "city": "Nashville",
-      "state": "TN",
+      "stateName": "TN",
       "zip": "37209"
     },
     {
       "id": 3,
       "address": "301 Plus Park Blvd",
       "city": "Nashville",
-      "state": "TN",
+      "stateName": "TN",
       "zip": "37209"
+    },
+    {
+      "id": 4,
+      "address": "1500 West End Avenue",
+      "city": "Nashville",
+      "stateName": "TN",
+      "zip": 37209
     }
   ]
 }
