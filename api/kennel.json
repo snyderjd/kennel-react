@@ -49,15 +49,15 @@
   ],
   "locations": [
     {
-      "id": 1,
-      "address": "100 Locust Street",
+      "id": 2,
+      "address": "300 8th Avenue",
       "city": "Nashville",
       "state": "TN",
       "zip": "37209"
     },
     {
-      "id": 2,
-      "address": "300 8th Avenue",
+      "id": 3,
+      "address": "301 Plus Park Blvd",
       "city": "Nashville",
       "state": "TN",
       "zip": "37209"

@@ -8,6 +8,7 @@ class LocationCard extends Component {
                     <h3>Location:</h3>
                     <p>{this.props.location.address}</p>
                     <p>{this.props.location.city}, {this.props.location.state} {this.props.location.zip}</p>
+                    <button type="button" onClick={() => this.props.deleteLocation(this.props.location.id)}>Remove Owner</button>
                 </div>
             </div>
         )
