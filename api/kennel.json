@@ -34,17 +34,20 @@
     {
       "id": 1,
       "name": "Dwayne Johnson",
-      "phoneNumber": "555-321-1000"
+      "phoneNumber": "555-321-1000",
+      "animalId": 1
     },
     {
       "id": 2,
       "name": "Kevin Hart",
-      "phoneNumber": "555-321-2000"
+      "phoneNumber": "555-321-2000",
+      "animalId": 2
     },
     {
       "id": 4,
       "name": "Brian Urlacher",
-      "phoneNumber": "555-321-4000"
+      "phoneNumber": "555-321-4000",
+      "animalId": 3
     }
   ],
   "locations": [
