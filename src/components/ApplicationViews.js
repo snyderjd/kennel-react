@@ -1,4 +1,4 @@
-import { Route } from 'react-router-dom';
+import { Route, Redirect } from "react-router-dom";
 import React, { Component } from 'react';
 import Home from './home/Home';
 import AnimalList from './animal/AnimalList';
@@ -11,18 +11,29 @@ import AnimalForm from './animal/AnimalForm';
 import EmployeeForm from './employee/EmployeeForm';
 import OwnerForm from './owner/OwnerForm';
 import LocationForm from './location/LocationForm';
+import Login from './auth/Login';
 
 
 class ApplicationViews extends Component {
 
+    // Check if credentials are in sessionStorage
+    isAuthenticated = () => sessionStorage.getItem("credentials") !== null;
+
     render() {
         return (
             <React.Fragment>
+                <Route path="/login" component={Login} />
+
                 <Route exact path="/" render={(props) => {
                     return <Home />
                 }} />
-                <Route exact path="/animals" render={(props) => {
-                    return <AnimalList {...props}/>
+                
+                <Route exact path="/animals" render={props => {
+                    if (this.isAuthenticated()) {
+                        return <AnimalList {...props} />
+                    } else {
+                        return <Redirect to="/login" />
+                    }
                 }} />
 
                 <Route path="/animals/:animalId(\d+)" render={(props) => {
