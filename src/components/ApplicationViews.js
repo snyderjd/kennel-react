@@ -10,6 +10,7 @@ import LocationDetail from './location/LocationDetail';
 import AnimalForm from './animal/AnimalForm';
 import EmployeeForm from './employee/EmployeeForm';
 import OwnerForm from './owner/OwnerForm';
+import LocationForm from './location/LocationForm';
 
 
 class ApplicationViews extends Component {
@@ -34,7 +35,11 @@ class ApplicationViews extends Component {
                 }} />
 
                 <Route exact path="/locations" render={(props) => {
-                    return <LocationList />
+                    return <LocationList {...props} />
+                }} />
+
+                <Route path="/locations/new" render={(props) => {
+                    return <LocationForm {...props}/>
                 }} />
 
                 <Route  path="/locations/:locationId(\d+)" render={(props) => {
