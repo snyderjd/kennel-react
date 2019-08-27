@@ -37,15 +37,18 @@
   "owners": [
     {
       "id": 1,
-      "name": "Dwayne Johnson",
-      "phoneNumber": "555-321-1000",
-      "animalId": 1
+      "ownerName": "Dwayne Johnson",
+      "phoneNumber": "555-321-1000"
     },
     {
       "id": 2,
-      "name": "Kevin Hart",
-      "phoneNumber": "555-321-2000",
-      "animalId": 2
+      "ownerName": "Kevin Hart",
+      "phoneNumber": "555-321-2000"
+    },
+    {
+      "ownerName": "Sharon Marsh",
+      "phoneNumber": "555-321-4343",
+      "id": 4
     }
   ],
   "locations": [
