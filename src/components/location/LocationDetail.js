@@ -7,7 +7,8 @@ class LocationDetail extends Component {
         address: "",
         city: "",
         stateName: "",
-        zip: ""
+        zip: "",
+        loadingStatus: true
     }
 
     componentDidMount() {
@@ -19,9 +20,16 @@ class LocationDetail extends Component {
                 address: location.address,
                 city: location.city,
                 stateName: location.stateName,
-                zip: location.zip
+                zip: location.zip,
+                loadingStatus: false
             });
         });
+    }
+
+    handleDelete = () => {
+        // invoke the delete function in LocationManager and re-direct to LocationList
+        this.setState({loadingStatus: true})
+        LocationManager.delete(this.props.locationId).then(() => this.props.history.push("/locations"))
     }
 
     render() {
@@ -31,6 +39,9 @@ class LocationDetail extends Component {
                     <h3>Location:</h3>
                     <p>{this.state.address}</p>
                     <p>{this.state.city}, {this.state.stateName} {this.zip}</p>
+                    <button type="button" disabled={this.state.loadingStatus} onClick={this.handleDelete}>
+                        Close Location
+                    </button>
                 </div>
             </div>
         )
@@ -38,7 +49,3 @@ class LocationDetail extends Component {
 }
 
 export default LocationDetail;
-
-// import React, { Component } from 'react';
-// import AnimalManager from '../../modules/AnimalManager';
-// import './AnimalDetail.css'

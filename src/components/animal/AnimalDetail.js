@@ -7,6 +7,13 @@ class AnimalDetail extends Component {
     state = {
         name: "",
         breed: "",
+        loadingStatus: true
+    }
+
+    // invoke the delete function in AnimalManager and re-direct to the animal list
+    handleDelete = () => {
+        this.setState({loadingStatus: true })
+        AnimalManager.delete(this.props.animalId).then(() => this.props.history.push("/animals"))
     }
 
     componentDidMount() {
@@ -16,7 +23,8 @@ class AnimalDetail extends Component {
             .then((animal) => {
                 this.setState({
                     name: animal.name,
-                    breed: animal.breed
+                    breed: animal.breed,
+                    loadingStatus: false
                 });
             });
     }
@@ -30,6 +38,7 @@ class AnimalDetail extends Component {
                     </picture>
                     <h3>Name: <span style={{ color: 'darkslategrey' }}>{this.state.name}</span></h3>
                     <p>Breed: {this.state.breed}</p>
+                    <button type="button" dissabled={this.state.loadingStatus} onClick={this.handleDelete}>Discharge</button>
                 </div>
             </div>
         );

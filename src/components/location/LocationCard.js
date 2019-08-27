@@ -10,7 +10,7 @@ class LocationCard extends Component {
                     <p>{this.props.location.address}</p>
                     <p>{this.props.location.city}, {this.props.location.state} {this.props.location.zip}</p>
                     <Link to={`/locations/${this.props.location.id}`}><button>Details</button></Link>
-                    <button type="button" onClick={() => this.props.deleteLocation(this.props.location.id)}>Remove Owner</button>
+                    <button type="button" onClick={() => this.props.deleteLocation(this.props.location.id)}>Remove Location</button>
                 </div>
             </div>
         )

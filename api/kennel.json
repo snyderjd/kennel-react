@@ -9,11 +9,6 @@
       "id": 2,
       "name": "Decker",
       "breed": "German Sheperd"
-    },
-    {
-      "id": 3,
-      "name": "Esme",
-      "breed": "Pitbull"
     }
   ],
   "employees": [
@@ -42,12 +37,6 @@
       "name": "Kevin Hart",
       "phoneNumber": "555-321-2000",
       "animalId": 2
-    },
-    {
-      "id": 4,
-      "name": "Brian Urlacher",
-      "phoneNumber": "555-321-4000",
-      "animalId": 3
     }
   ],
   "locations": [
@@ -64,13 +53,6 @@
       "city": "Nashville",
       "stateName": "TN",
       "zip": "37209"
-    },
-    {
-      "id": 4,
-      "address": "1500 West End Avenue",
-      "city": "Nashville",
-      "stateName": "TN",
-      "zip": 37209
     }
   ]
 }
