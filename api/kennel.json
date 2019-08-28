@@ -1,13 +1,18 @@
 {
   "animals": [
     {
-      "id": 2,
-      "name": "Decker",
-      "breed": "German Sheperd"
+      "id": 1,
+      "name": "Doodles",
+      "breed": "Poodle"
     },
     {
-      "name": "Air Bud",
-      "breed": "Golden Retriever",
+      "id": 2,
+      "name": "Whiskerz",
+      "breed": "Cat"
+    },
+    {
+      "name": "Decker",
+      "breed": "German Shepherd",
       "id": 3
     }
   ],
@@ -17,48 +22,52 @@
       "name": "Aaron Rodgers"
     },
     {
-      "id": 2,
-      "name": "Tom Brady"
+      "name": "Drew Brees",
+      "id": 2
     },
     {
-      "id": 3,
-      "name": "Drew Brees"
-    },
-    {
-      "name": "Doug Flutie",
-      "id": 4
-    },
-    {
-      "name": "Joe",
-      "id": 5
+      "name": "Tom Brady",
+      "id": 3
     }
   ],
   "owners": [
     {
-      "id": 2,
-      "ownerName": "Kevin Hart",
-      "phoneNumber": "555-321-2000"
+      "ownerName": "Eric Cartman",
+      "phoneNumber": "555-321-5555",
+      "id": 1
     },
     {
-      "ownerName": "Sharon Marsh",
+      "ownerName": "Stan Marsh",
       "phoneNumber": "555-321-4343",
-      "id": 4
+      "id": 2
+    },
+    {
+      "ownerName": "Dwayne Johnson",
+      "phoneNumber": "555-321-2020",
+      "id": 3
     }
   ],
   "locations": [
     {
-      "id": 2,
-      "address": "300 8th Avenue",
+      "id": 1,
+      "address": "650 Locust Street",
       "city": "Nashville",
       "stateName": "TN",
       "zip": "37209"
     },
     {
-      "address": "550 Locust Street",
+      "address": "500 Interstate Blvd S, Suite 300",
+      "city": "Nashville",
+      "stateName": "Tennessee",
+      "zip": "37210",
+      "id": 2
+    },
+    {
+      "address": "400 Main Street",
       "city": "Nashville",
       "stateName": "TN",
       "zip": "37209",
-      "id": 4
+      "id": 3
     }
   ]
 }

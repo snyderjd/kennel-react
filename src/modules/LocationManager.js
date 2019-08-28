@@ -23,5 +23,15 @@ export default {
             },
             body: JSON.stringify(newLocation)
         }).then(response => response.json());
+    },
+
+    edit(location) {
+        return fetch(`${remoteURL}/locations/${location.id}`, {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(location)
+        }).then(response => response.json());
     }
 };

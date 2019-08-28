@@ -23,6 +23,16 @@ export default {
             },
             body: JSON.stringify(newEmployee)
         }).then(response => response.json());
+    },
+
+    edit(employee) {
+        return fetch(`${remoteURL}/employees/${employee.id}`, {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(employee)
+        }).then(response => response.json());
     }
 
 };

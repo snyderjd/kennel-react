@@ -23,13 +23,14 @@ class LocationList extends Component {
             LocationManager.getAll().then(newLocations => {
                 this.setState({
                     locations: newLocations
-                })
-            })
+                });
+            });
         })
     }
 
     render() {
         console.log("LOCATION LIST: Render");
+        console.log(this.state.locations);
 
         return (
             <React.Fragment>
@@ -38,16 +39,20 @@ class LocationList extends Component {
                         className="btn"
                         onClick={() => { this.props.history.push("/locations/new") }}>
                         Add Location
-                        </button>
+                    </button>
                 </section>
                 <div className="container-cards">
                     {this.state.locations.map(location => 
                         <LocationCard
+                            {...this.props}
                             key={location.id}
                             location={location}
                             deleteLocation={this.deleteLocation}
                         />
                     )}
+                </div>
+                <div className="container-noItems">
+                    {this.state.locations.length === 0 ? "We currently have no locations." : ""}
                 </div>
             </React.Fragment>
         )

@@ -50,8 +50,12 @@ class AnimalList extends Component {
                             key={animal.id} 
                             animal={animal}
                             deleteAnimal={this.deleteAnimal} 
+                            {...this.props}
                         />
                     )}
+                </div>
+                <div className="container-noItems">
+                    {this.state.animals.length === 0 ? "There are currently no animals in our shelter!" : ""}
                 </div>
             </React.Fragment>
         )

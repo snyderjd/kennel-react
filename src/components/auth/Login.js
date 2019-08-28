@@ -28,7 +28,7 @@ class Login extends Component {
                 password: this.state.password
             })
         )
-        this.props.history.push("/animals");
+        this.props.history.push("/");
 
     }
 
@@ -52,7 +52,7 @@ class Login extends Component {
                     </div>
                     <button type="submit">
                         Sign in
-            </button>
+                    </button>
                 </fieldset>
             </form>
         )

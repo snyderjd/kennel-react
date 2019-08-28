@@ -23,6 +23,16 @@ export default {
             },
             body: JSON.stringify(newOwner)
         }).then(response => response.json());
+    },
+
+    edit(owner) {
+        return fetch(`${remoteURL}/owners/${owner.id}`, {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(owner)
+        }).then(response => response.json());
     }
 
 };

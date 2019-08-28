@@ -45,9 +45,13 @@ class OwnerList extends Component {
                         <OwnerCard 
                             key={owner.id} 
                             owner={owner}
-                            deleteOwner={this.deleteOwner} 
+                            deleteOwner={this.deleteOwner}
+                            {...this.props} 
                         />
                     )}
+                </div>
+                <div className="container-noItems">
+                    {this.state.owners.length === 0 ? "There are currently no owners!" : ""}
                 </div>
             </React.Fragment>
         )

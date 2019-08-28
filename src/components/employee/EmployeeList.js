@@ -49,8 +49,12 @@ class EmployeeList extends Component {
                             key={employee.id} 
                             employee={employee}
                             deleteEmployee={this.deleteEmployee}
+                            {...this.props}
                         />
                     )}
+                </div>
+                <div className="container-noItems">
+                    {this.state.employees.length === 0 ? "We currently have no employees!" : ""}
                 </div>
             </React.Fragment>
         )
