@@ -1,11 +1,6 @@
 {
   "animals": [
     {
-      "id": 1,
-      "name": "Doodles",
-      "breed": "Poodle"
-    },
-    {
       "id": 2,
       "name": "Decker",
       "breed": "German Sheperd"
@@ -32,14 +27,13 @@
     {
       "name": "Doug Flutie",
       "id": 4
+    },
+    {
+      "name": "Joe",
+      "id": 5
     }
   ],
   "owners": [
-    {
-      "id": 1,
-      "ownerName": "Dwayne Johnson",
-      "phoneNumber": "555-321-1000"
-    },
     {
       "id": 2,
       "ownerName": "Kevin Hart",
@@ -55,13 +49,6 @@
     {
       "id": 2,
       "address": "300 8th Avenue",
-      "city": "Nashville",
-      "stateName": "TN",
-      "zip": "37209"
-    },
-    {
-      "id": 3,
-      "address": "301 Plus Park Blvd",
       "city": "Nashville",
       "stateName": "TN",
       "zip": "37209"

@@ -46,7 +46,10 @@ class ApplicationViews extends Component {
                 }} />
 
                 <Route exact path="/locations" render={(props) => {
-                    return <LocationList {...props} />
+                    if (this.isAuthenticated()) {
+                        return <LocationList {...props} />
+                    }
+                    return <Redirect to="/login" />
                 }} />
 
                 <Route path="/locations/new" render={(props) => {
@@ -58,7 +61,10 @@ class ApplicationViews extends Component {
                 }} />
 
                 <Route exact path="/employees" render={(props) => {
-                    return <EmployeeList {...props}/>
+                    if (this.isAuthenticated()) {
+                        return <EmployeeList {...props} />                        
+                    }
+                    return <Redirect to="/login" />
                 }} />
 
                 <Route path="/employees/new" render={(props) => {
@@ -66,7 +72,10 @@ class ApplicationViews extends Component {
                 }} />
 
                 <Route exact path="/owners" render={(props) => {
-                    return <OwnerList {...props}/>
+                    if (this.isAuthenticated()) {
+                        return <OwnerList {...props}/>
+                    }
+                    return <Redirect to="/login" />
                 }} />
 
                 <Route path="/owners/new" render={(props) => {
