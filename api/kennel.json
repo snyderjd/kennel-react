@@ -1,30 +1,30 @@
 {
-    "animals": [
-      {
-        "id": 2,
-        "name": "Doodles",
-        "breed": "German Sheperd",
-        "employeeId": 3
-      },
-      {
-        "id": 3,
-        "name": "Esme",
-        "breed": "Pitbull",
-        "employeeId": 1
-      },
-      {
-        "name": "Jack",
-        "breed": "Big cat",
-        "id": 4,
-        "employeeId": 1
-      },
-      {
-        "name": "Angus",
-        "breed": "Gerbil",
-        "id": 5,
-        "employeeId": 2
-      }
-    ],
+  "animals": [
+    {
+      "id": 2,
+      "name": "Doodles",
+      "breed": "German Sheperd",
+      "employeeId": 3
+    },
+    {
+      "id": 3,
+      "name": "Esme",
+      "breed": "Pitbull",
+      "employeeId": 3
+    },
+    {
+      "name": "Jack",
+      "breed": "Big cat",
+      "id": 4,
+      "employeeId": 1
+    },
+    {
+      "name": "Angus",
+      "breed": "Gerbil",
+      "id": 5,
+      "employeeId": 2
+    }
+  ],
   "employees": [
     {
       "id": 1,
