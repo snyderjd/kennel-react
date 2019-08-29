@@ -1,33 +1,42 @@
 {
-  "animals": [
-    {
-      "id": 1,
-      "name": "Doodles",
-      "breed": "Poodle"
-    },
-    {
-      "id": 2,
-      "name": "Whiskerz",
-      "breed": "Cat"
-    },
-    {
-      "name": "Decker",
-      "breed": "German Shepherd",
-      "id": 3
-    }
-  ],
+    "animals": [
+      {
+        "id": 2,
+        "name": "Doodles",
+        "breed": "German Sheperd",
+        "employeeId": 3
+      },
+      {
+        "id": 3,
+        "name": "Esme",
+        "breed": "Pitbull",
+        "employeeId": 1
+      },
+      {
+        "name": "Jack",
+        "breed": "Big cat",
+        "id": 4,
+        "employeeId": 1
+      },
+      {
+        "name": "Angus",
+        "breed": "Gerbil",
+        "id": 5,
+        "employeeId": 2
+      }
+    ],
   "employees": [
     {
       "id": 1,
-      "name": "Aaron Rodgers"
+      "name": "Jessica Younker"
     },
     {
-      "name": "Drew Brees",
-      "id": 2
+      "id": 2,
+      "name": "Jordan Nelson"
     },
     {
-      "name": "Tom Brady",
-      "id": 3
+      "id": 3,
+      "name": "Zoe LeBlanc"
     }
   ],
   "owners": [

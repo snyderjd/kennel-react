@@ -9,6 +9,10 @@ export default {
         return fetch(`${remoteURL}/employees`).then(result => result.json());
     },
 
+    getWithAnimals(id) {
+        return fetch(`${remoteURL}/employees/${id}?_embed=animals`).then(response => response.json());
+    },
+
     delete(id) {
         return fetch(`${remoteURL}/employees/${id}`, {
             method: "DELETE"
